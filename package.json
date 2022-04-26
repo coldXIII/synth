@@ -1,0 +1,28 @@
+{
+  "name": "synth",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "pinia": "^2.0.13",
+    "sass": "^1.50.0",
+    "swiper": "^8.1.4",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@vitejs/plugin-vue": "^2.3.0",
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.6.2",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0",
+    "vue-tsc": "^0.29.8"
+  },
+  "homepage": "https://github.com/coldXIII/synth.git"
+}
