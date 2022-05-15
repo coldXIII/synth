@@ -5,7 +5,9 @@
     </div>
     <div class="box">
       <div class="lamp-container">
-        <button @click="turnOn = !turnOn"></button>
+        <button @click="turnOn = !turnOn">
+          <i class="fa-solid fa-circle-play"></i>
+        </button>
         <img src="/lamp.webp" alt="" class="lamp" />
         <img
           src="/light.webp"
@@ -15,7 +17,7 @@
           :class="{ on: turnOn }"
         />
         <a
-          href="https://www.youtube.com/playlist?list=PLfZmxCD5mrzjdzxggibdIImPV4RNkc6Do"
+          href="https://www.youtube.com/playlist?list=PLfZmxCD5mrzgJg3CQVAD0CiDGwBG4K7W0"
           target="_blank"
         >
           <div class="image">
@@ -122,7 +124,7 @@ const turnOn = ref(false);
         position: absolute;
         left: 3%;
         top: 28%;
-        padding: 1rem;
+        padding: 0.5rem;
         border: 1px solid $purple;
         border-radius: 0.5rem;
         background-color: $purple;
@@ -132,6 +134,11 @@ const turnOn = ref(false);
           border: 1px solid $red;
           background-color: $red;
           box-shadow: 0 0 5px $red;
+        }
+        i {
+          font-size: 2rem;
+          color: $white;
+          text-shadow: 2px 2px 1px $pink, -2px -2px 1px $blue;
         }
       }
       .image {

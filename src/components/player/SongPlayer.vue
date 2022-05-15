@@ -36,7 +36,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { defineEmits, defineProps } from 'vue';
 
 const isPlaying = ref(false);
 const audioPlayer = ref();
